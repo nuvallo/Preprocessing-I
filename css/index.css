@@ -234,6 +234,7 @@ body {
   padding: 2% 0;
 }
 .work-history-section table {
+  text-align: center;
   width: 100%;
   margin-bottom: 5%;
 }
