@@ -5,6 +5,7 @@
 */
 // import
 @import "vars.less";
+@import "mobile.less";
 
 html,
 body,
@@ -143,6 +144,15 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
+// Text color mixin
+.text-color(@color) when (lightness(@color) >= 50%) {
+  color: black;
+}
+
+.text-color(@color) when (lightness(@color) <= 50%) {
+  color: white;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -202,6 +212,7 @@ body {
 
     a {
       @primary-btn();
+      .text-color(@secondary-color-dark);
     }
   }
 }
@@ -215,7 +226,7 @@ body {
 
   .col {
     width: 50%;
-    padding: 0 20px;
+    padding: 0 5%;
     h1 {
       font-size: 2rem;
       margin-bottom: 2%;
@@ -249,11 +260,11 @@ body {
 
     td {
       border: 1px solid @primary-color;
-      padding: 1%;
+      @p-1();
     }
     th {
       border: 1px solid @primary-color;
-      padding: 1%;
+      @p-1();
     }
   }
 }
