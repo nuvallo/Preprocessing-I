@@ -159,7 +159,7 @@ body {
 }
 .top-section {
   background: #ccc;
-  padding: 5% 5%;
+  padding: 5%;
 }
 .top-section .top-content {
   border-bottom: 2px solid #bbb;
@@ -188,4 +188,51 @@ body {
   padding: 20px;
   border-radius: 5px;
   text-decoration: none;
+}
+.bottom-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+.bottom-section .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.bottom-section .col h1 {
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.bottom-section .col ul {
+  width: 100%;
+  border: 2px solid #bbb;
+}
+.bottom-section .col ul li {
+  padding: 10px 10px;
+  border-bottom: 2px solid #bbb;
+}
+.work-history-section h1 {
+  font-size: 2rem;
+  padding: 2% 0;
+}
+.work-history-section table {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.work-history-section table .grey-background {
+  background: #bbb;
+}
+.work-history-section table td {
+  border: 1px solid black;
+  padding: 1%;
+}
+.work-history-section table th {
+  border: 1px solid black;
+  padding: 1%;
+}
+.main-footer {
+  background: #bbb;
+  padding: 5%;
+}
+.main-footer p {
+  text-align: center;
 }

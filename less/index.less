@@ -3,6 +3,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+// import
+@import "vars.less";
 
 html,
 body,
@@ -141,20 +143,6 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
-@primary-color: black;
-@secondary-color: #ccc;
-@secondary-color-light: #bbb;
-@secondary-color-dark: #222;
-@font-family: Arial, Helvetica, sans-serif;
-@primary-btn: {
-  display: inline-block;
-  color: @secondary-color-light;
-  background: @secondary-color-dark;
-  padding: 20px;
-  border-radius: 5px;
-  text-decoration: none;
-};
-
 .container {
   max-width: 1200px;
   margin: auto;
@@ -185,13 +173,13 @@ body {
 
 .top-section {
   background: @secondary-color;
-  padding: 5% 5%;
+  padding: 5%;
 
   .top-content {
     border-bottom: 2px solid @secondary-color-light;
     h1 {
       font-size: 3rem;
-      margin: 2% 0;
+      @m-2();
     }
 
     p {
@@ -207,7 +195,7 @@ body {
 
   .bottom-content {
     p {
-      margin: 2% 0;
+      @m-2();
       font-family: @font-family;
       font-size: 20px;
     }
@@ -215,5 +203,65 @@ body {
     a {
       @primary-btn();
     }
+  }
+}
+
+.bottom-section {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+  }
+
+  .col {
+    width: 50%;
+    padding: 0 20px;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2%;
+    }
+
+    ul {
+      width: 100%;
+      border: 2px solid @secondary-color-light;
+
+      li {
+        padding: 10px 10px;
+        border-bottom: 2px solid @secondary-color-light;
+      }
+    }
+  }
+}
+
+.work-history-section {
+  h1 {
+    font-size: 2rem;
+    padding: 2% 0;
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 5%;
+
+    .grey-background {
+      background: @secondary-color-light;
+    }
+
+    td {
+      border: 1px solid @primary-color;
+      padding: 1%;
+    }
+    th {
+      border: 1px solid @primary-color;
+      padding: 1%;
+    }
+  }
+}
+
+.main-footer {
+  background: @secondary-color-light;
+  padding: 5%;
+  p {
+    text-align: center;
   }
 }
