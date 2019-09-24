@@ -136,7 +136,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 .navbar {
@@ -145,6 +145,7 @@ body {
 }
 .navbar ul {
   display: flex;
+  justify-content: end;
 }
 .navbar li {
   padding: 10%;
@@ -154,11 +155,14 @@ body {
   text-decoration: none;
 }
 .navbar a:hover {
-  color: #ccc;
+  color: #222;
 }
 .top-section {
   background: #ccc;
   padding: 5% 5%;
+}
+.top-section .top-content {
+  border-bottom: 2px solid #bbb;
 }
 .top-section .top-content h1 {
   font-size: 3rem;
@@ -166,8 +170,22 @@ body {
 }
 .top-section .top-content p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  margin: 0 0 2% 0;
 }
 .top-section img {
   width: 40%;
+}
+.top-section .bottom-content p {
+  margin: 2% 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.top-section .bottom-content a {
+  display: inline-block;
+  color: #bbb;
+  background: #222;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
 }
