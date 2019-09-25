@@ -168,7 +168,7 @@ body {
 
 .aside-section {
   width: 20%;
-  height: 110%;
+  height: 120%;
   background: @primary-bg;
   position: absolute;
   top: 0;
@@ -189,8 +189,8 @@ body {
 
     ul {
       text-align: center;
-      border-top: 1px solid @secondary-color;
-      border-bottom: 1px solid @secondary-color;
+      border-top: @border;
+      border-bottom: @border;
     }
 
     li {
@@ -222,7 +222,7 @@ body {
     h1 {
       font-size: 2rem;
       color: @secondary-color;
-      border-bottom: @secondary-color solid 2px;
+      border-bottom: @border;
       .p-b;
     }
 
@@ -244,7 +244,7 @@ body {
     h1 {
       font-size: 2rem;
       color: @secondary-color;
-      border-bottom: @secondary-color solid 2px;
+      border-bottom: @border;
       .p-b;
     }
 
@@ -252,10 +252,15 @@ body {
       color: @secondary-color;
       text-decoration: none;
       line-height: 2.5;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     .icon {
       display: flex;
+      .m-t;
       padding: 2% 5%;
     }
 
@@ -265,9 +270,13 @@ body {
   }
 
   footer {
+    width: 100%;
     .m-t;
+    border-top: @border;
     p {
+      .m-t;
       color: @secondary-color;
+      text-align: center;
     }
   }
 }
@@ -302,7 +311,7 @@ body {
       padding: 1% 5%;
     }
     .border {
-      border-bottom: 1px solid @secondary-color-dark;
+      border-bottom: 2px solid @secondary-color-dark;
     }
   }
 }

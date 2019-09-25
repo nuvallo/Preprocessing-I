@@ -187,7 +187,7 @@ body {
 }
 .aside-section {
   width: 20%;
-  height: 110%;
+  height: 120%;
   background: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
   position: absolute;
   top: 0;
@@ -208,8 +208,8 @@ body {
 }
 .aside-section .navbar ul {
   text-align: center;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .aside-section .navbar li {
   padding-top: 5%;
@@ -235,7 +235,7 @@ body {
 .aside-section .contact-content h1 {
   font-size: 2rem;
   color: #fff;
-  border-bottom: #fff solid 2px;
+  border-bottom: 2px solid #fff;
   padding-bottom: 5%;
 }
 .aside-section .contact-content a {
@@ -253,7 +253,7 @@ body {
 .aside-section .aside-social h1 {
   font-size: 2rem;
   color: #fff;
-  border-bottom: #fff solid 2px;
+  border-bottom: 2px solid #fff;
   padding-bottom: 5%;
 }
 .aside-section .aside-social a {
@@ -261,18 +261,26 @@ body {
   text-decoration: none;
   line-height: 2.5;
 }
+.aside-section .aside-social a:hover {
+  opacity: 0.5;
+}
 .aside-section .aside-social .icon {
   display: flex;
+  margin-top: 5%;
   padding: 2% 5%;
 }
 .aside-section .aside-social a {
   margin-right: 5%;
 }
 .aside-section footer {
+  width: 100%;
   margin-top: 5%;
+  border-top: 2px solid #fff;
 }
 .aside-section footer p {
+  margin-top: 5%;
   color: #fff;
+  text-align: center;
 }
 .main-section {
   margin-top: 5%;
@@ -300,5 +308,5 @@ body {
   padding: 1% 5%;
 }
 .main-section .box-border .border {
-  border-bottom: 1px solid #333;
+  border-bottom: 2px solid #333;
 }
