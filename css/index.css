@@ -17,22 +17,22 @@
     padding: 5% !important;
     border-bottom: 2px solid #222;
   }
-}
-.top-section .top-content h1 {
-  font-size: 2rem !important;
-}
-.top-section .top-content p {
-  font-size: 15px !important;
-}
-.bottom-section .row {
-  flex-direction: column;
-}
-.bottom-section .col {
-  width: 100% !important;
-  padding: 0 !important;
-}
-.bottom-section .col h1 {
-  margin: 15% 0;
+  .top-section .top-content h1 {
+    font-size: 2rem !important;
+  }
+  .top-section .top-content p {
+    font-size: 15px !important;
+  }
+  .bottom-section .row {
+    flex-direction: column;
+  }
+  .bottom-section .col {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .bottom-section .col h1 {
+    margin: 15% 0;
+  }
 }
 html,
 body,

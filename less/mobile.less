@@ -1,3 +1,5 @@
+@import "vars.less";
+
 @media (max-width: 700px) {
   // Navigation
   .navbar {
@@ -16,30 +18,30 @@
       border-bottom: 2px solid @secondary-color-dark;
     }
   }
-}
 
-.top-section {
-  .top-content {
-    h1 {
-      font-size: 2rem !important;
-    }
+  .top-section {
+    .top-content {
+      h1 {
+        font-size: 2rem !important;
+      }
 
-    p {
-      font-size: 15px !important;
+      p {
+        font-size: 15px !important;
+      }
     }
   }
-}
 
-.bottom-section {
-  .row {
-    flex-direction: column;
-  }
-  .col {
-    width: 100% !important;
-    padding: 0 !important;
+  .bottom-section {
+    .row {
+      flex-direction: column;
+    }
+    .col {
+      width: 100% !important;
+      padding: 0 !important;
 
-    h1 {
-      margin: 15% 0;
+      h1 {
+        margin: 15% 0;
+      }
     }
   }
 }
