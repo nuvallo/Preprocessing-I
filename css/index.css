@@ -3,22 +3,36 @@
    License: none (public domain)
 */
 @media (max-width: 700px) {
-  .top-section .top-content h1 {
-    font-size: 2rem !important;
+  .navbar {
+    justify-content: none;
   }
-  .top-section .top-content p {
-    font-size: 15px !important;
-  }
-  .bottom-section .row {
+  .navbar ul {
     flex-direction: column;
+    justify-content: none;
+    margin: auto;
+    text-align: center;
+    width: 100%;
   }
-  .bottom-section .col {
-    width: 100% !important;
-    padding: 0 !important;
+  .navbar li {
+    padding: 5% !important;
+    border-bottom: 2px solid #222;
   }
-  .bottom-section .col h1 {
-    margin: 15% 0;
-  }
+}
+.top-section .top-content h1 {
+  font-size: 2rem !important;
+}
+.top-section .top-content p {
+  font-size: 15px !important;
+}
+.bottom-section .row {
+  flex-direction: column;
+}
+.bottom-section .col {
+  width: 100% !important;
+  padding: 0 !important;
+}
+.bottom-section .col h1 {
+  margin: 15% 0;
 }
 html,
 body,
