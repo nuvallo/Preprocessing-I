@@ -1,0 +1,317 @@
+@import "vars.less";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 0 0 30%;
+}
+
+// Header
+.main-header {
+  .m-t;
+  background: @background-img;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  color: @secondary-color;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+
+  p {
+    .m-1;
+    font-size: 20px;
+  }
+}
+
+.aside-section {
+  width: 20%;
+  height: 120%;
+  background: @primary-bg;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .navbar {
+    width: 100%;
+    .logo {
+      .m-t;
+      .m-b;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      text-align: center;
+      border-top: @border;
+      border-bottom: @border;
+    }
+
+    li {
+      .p-t;
+      .p-b;
+
+      &:hover {
+        background: @secondary-color-light;
+        border: none;
+      }
+    }
+
+    a {
+      color: @secondary-color;
+      text-decoration: none;
+    }
+  }
+
+  img {
+    .m-t;
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  .contact-content {
+    width: 100%;
+    padding: 5%;
+
+    h1 {
+      font-size: 2rem;
+      color: @secondary-color;
+      border-bottom: @border;
+      .p-b;
+    }
+
+    a {
+      color: @secondary-color;
+      text-decoration: none;
+      line-height: 2.5;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .aside-social {
+    width: 100%;
+    padding: 5%;
+
+    h1 {
+      font-size: 2rem;
+      color: @secondary-color;
+      border-bottom: @border;
+      .p-b;
+    }
+
+    a {
+      color: @secondary-color;
+      text-decoration: none;
+      line-height: 2.5;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .icon {
+      display: flex;
+      .m-t;
+      padding: 2% 5%;
+    }
+
+    a {
+      .m-r;
+    }
+  }
+
+  footer {
+    width: 100%;
+    .m-t;
+    border-top: @border;
+    p {
+      .m-t;
+      color: @secondary-color;
+      text-align: center;
+    }
+  }
+}
+
+.main-section {
+  .m-t;
+  display: flex;
+
+  .box {
+    width: 50%;
+    margin: 0 2%;
+    background: @secondary-color-light;
+
+    h1 {
+      background: @primary-bg;
+      padding: 5% 0;
+      text-align: center;
+      font-size: 25px;
+      color: @secondary-color;
+    }
+
+    p {
+      margin: 2% 0;
+      padding: 5%;
+    }
+  }
+
+  .box-border {
+    h2 {
+      font-size: 20px;
+      margin-top: 5%;
+      padding: 1% 5%;
+    }
+    .border {
+      border-bottom: 2px solid @secondary-color-dark;
+    }
+  }
+}

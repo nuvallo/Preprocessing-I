@@ -1,1 +1,272 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@media (max-width: 700px) {
+  .navbar {
+    justify-content: none;
+  }
+  .navbar ul {
+    flex-direction: column;
+    justify-content: none;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .navbar li {
+    padding: 5% !important;
+    border-bottom: 2px solid #222;
+  }
+  .top-section .top-content h1 {
+    font-size: 2rem !important;
+  }
+  .top-section .top-content p {
+    font-size: 15px !important;
+  }
+  .bottom-section .row {
+    flex-direction: column;
+  }
+  .bottom-section .col {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .bottom-section .col h1 {
+    margin: 15% 0;
+  }
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: end;
+}
+.navbar ul {
+  display: flex;
+  justify-content: end;
+}
+.navbar li {
+  padding: 10%;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #222;
+}
+.top-section {
+  background: #ccc;
+  padding: 5%;
+}
+.top-section .top-content {
+  border-bottom: 2px solid #bbb;
+}
+.top-section .top-content h1 {
+  font-size: 3rem;
+  margin: 2% 0;
+}
+.top-section .top-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  margin: 0 0 2% 0;
+}
+.top-section img {
+  width: 40%;
+}
+.top-section .bottom-content p {
+  margin: 2% 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.top-section .bottom-content a {
+  display: inline-block;
+  color: #bbb;
+  background: #222;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+.bottom-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+.bottom-section .col {
+  width: 50%;
+  padding: 0 5%;
+}
+.bottom-section .col h1 {
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.bottom-section .col ul {
+  width: 100%;
+  border: 2px solid #bbb;
+}
+.bottom-section .col ul li {
+  padding: 10px 10px;
+  border-bottom: 2px solid #bbb;
+}
+.work-history-section h1 {
+  font-size: 2rem;
+  padding: 2% 0;
+}
+.work-history-section table {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.work-history-section table .grey-background {
+  background: #bbb;
+}
+.work-history-section table td {
+  border: 1px solid black;
+  padding: 1%;
+}
+.work-history-section table th {
+  border: 1px solid black;
+  padding: 1%;
+}
+.main-footer {
+  background: #bbb;
+  padding: 5%;
+}
+.main-footer p {
+  text-align: center;
+}

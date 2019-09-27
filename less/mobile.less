@@ -1,0 +1,47 @@
+@import "vars.less";
+
+@media (max-width: 700px) {
+  // Navigation
+  .navbar {
+    justify-content: none;
+
+    ul {
+      flex-direction: column;
+      justify-content: none;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+    }
+
+    li {
+      padding: 5% !important;
+      border-bottom: 2px solid @secondary-color-dark;
+    }
+  }
+
+  .top-section {
+    .top-content {
+      h1 {
+        font-size: 2rem !important;
+      }
+
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  .bottom-section {
+    .row {
+      flex-direction: column;
+    }
+    .col {
+      width: 100% !important;
+      padding: 0 !important;
+
+      h1 {
+        margin: 15% 0;
+      }
+    }
+  }
+}
